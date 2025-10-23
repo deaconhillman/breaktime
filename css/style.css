@@ -86,6 +86,14 @@ display: flex;
     background-color: var(--bright-color);
 }
 
+.hero-content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
 /* Utility Classes */
 
 .container {
@@ -146,6 +154,7 @@ display: flex;
     line-height: 1.2;
     font-weight: 600;
     margin: 40px 0 20px;
+    color: var(--dark-color);
 }
 
 .text-xxllight {
@@ -153,6 +162,7 @@ display: flex;
     line-height: 1.2;
     font-weight: 100;
     margin: 40px 0 20px;
+    color: var(--primary-color)
 }
 
 .text-xl {
@@ -185,4 +195,17 @@ display: flex;
 
 .text-center {
     text-align: center;
+}
+
+/* SVG Coloring Filters */
+
+.filter-blue {
+    filter: invert(75%) sepia(46%) saturate(1486%) hue-rotate(189deg) brightness(102%) contrast(102%);
+}
+
+.hero-content-rectangle {
+    height: 150;
+    z-index: -1;
+    background-color: var(--bright-color);
+    margin-top: -150px; 
 }
